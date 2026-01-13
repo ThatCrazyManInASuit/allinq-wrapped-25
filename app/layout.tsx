@@ -12,6 +12,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>All Inquiries Wrapped 2025</title>
       <body className="h-screen w-screen">
         <SessionProvider>{children}</SessionProvider>
       </body>

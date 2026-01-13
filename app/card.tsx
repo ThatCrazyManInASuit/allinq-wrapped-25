@@ -53,34 +53,77 @@ export default function Card(props: {id: number, userId: string}) {
 
 
   let content, animation = "";
+  const textAnimation = useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out") + " font-[Typewriter]";
   switch (displayID) {
     case 0:
-      content = <div className = {useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}>Hello {user.usernameDebug}!</div>
-      //sam.speak(`Hello ${user.usernameDebug}`);
+      content = <div className = {textAnimation}>The date is December 31st, 2024.</div>
       break;
     case 1:
-      content = <div className = {useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}>Are you ready for 2026?</div>
-      //sam.speak("Are you ready for twenty twenty six?");
+      content = <div className = {textAnimation}>You receive a call, from a mysterious voice, claiming they can tell the future.</div>
       break;
     case 2:
+      content = <div className = {textAnimation}>Your mind swirls at the idea of what the future could hold. Maybe you're going to be rich! Or maybe you'll have a car crash... </div>
+      break;
+    case 3:
+      content = <div className = {textAnimation}>Hopping out of your car, you arrive at the address given to you: an abandoned warehouse.</div>
+      break;
+    case 4:
+      content = <div className = {textAnimation}>After breaking a few windows and slamming through some doors, you finally make it inside.</div>
+      break;
+    case 5:
+      content = <div className = {textAnimation}>However, you are only met with a vast collection of boxes.</div>
+      break;
+    case 6:
+      content = <div className = {textAnimation}>Disappointed, you begin to turn to leave, when one box catches your eye...</div>
+      break;
+    case 7:
+      content = (
+        <div className = {"flex flex-col bg-[url('/cardboard.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] w-[80vh] text-center justify-center"}>
+          <p className=" font-[Marker] text-black text-[48pt]">{user.usernameDebug}</p>
+          <p className=" font-[Marker] text-black text-[24pt]">circa 2025</p>
+        </div>
+      )
+      animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
+      break;
+    case 8:
+      content = <div className = {textAnimation}><i>How strange...</i> you think to yourself. <i>Is this my Discord nickname in All Inquiries in 2025?</i></div>
+      break;
+    case 9:
+      content = <div className = {textAnimation}>
+        You peer inside the box and find a random assortment of papers and doodads, reports and printers, balls and pits.
+        </div>
+      break;
+    case 10:
       content = (
         <div className = "flex flex-col bg-[url(/fortune.png)] bg-cover h-9/10 w-[45vh] text-center justify-end pb-[25vh] rotate-[-7deg]">
-          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[24pt] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>In 2025, you will have posted {user.totalMessages} messages...</p>
+          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[24pt] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>In 2025, you will post {user.totalMessages} messages...</p>
         </div>
       );
       animation = useAnimation("animate-pick-up", "", "", "animate-put-down");
       break;
-    case 3:
+    case 11:
+      content = (
+        <div className = "flex flex-col bg-[url(/fortune.png)] bg-cover h-9/10 w-[45vh] text-center justify-end pb-[18vh] rotate-[-7deg]">
+          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[24pt] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>Of those your longest message will be {user.longestMessage} characters long...</p>
+        </div>
+      );
+      break;
+    case 12:
       content = (
         <div className = "flex flex-col bg-[url(/fortune.png)] bg-cover h-9/10 w-[45vh] text-center justify-end pb-[12vh] rotate-[-7deg]">
           <p className = {`text-black font-[Libre-Bodoni] font-thin text-[24pt] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>
-            Throughout those messages, you had an average of {user.averageWordsPerMessage} words per message
+            Throughout those messages, it will be an average of {user.averageWordsPerMessage} words per message!
           </p>
         </div>
       );
       animation = useAnimation("", "animate-put-down", "animate-pick-up", "");
       break;
-    case 4:
+    case 13:
+      content = <div className = {textAnimation}>
+        "Woah!" you exclaim as you watch the words change on the card. "Am I tripping balls?" you wonder aloud. You also wonder what other whimsical items are in the box.
+        </div>
+      break;
+    case 14:
       content = (
         <div className = "flex flex-col font-[Monserrat] font-bold text-center h-[90vh] w-[63vh] bg-white rotate-[7deg] p-5">
           <p className = "text-black text-[24pt]">2025 ANNUAL REPORT</p>
@@ -117,25 +160,46 @@ export default function Card(props: {id: number, userId: string}) {
       );
       animation = useAnimation("animate-pick-up", "animate-put-down", "animate-pick-up", "animate-put-down");
       break;
-    case 5:
+    case 15:
+      content = <div className = {textAnimation}>
+        Immediately upon the sight of a report, which are for nerds, you get really bored and start to leave, when all of a sudden, a TV falls on you.
+        </div>
+      break;
+    case 16:
       content = <StockBoard userId={props.userId}></StockBoard>
       animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
       break;
-    case 6:
+    case 17:
+      content = <div className = {textAnimation}>
+        Scared that another TV will fall on you, you run for the exit, only to trip over another box.
+        </div>
+      break;
+    case 18:
       content = (
         <div className = {"bg-[url('/cardboard.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] w-[80vh] text-center"}>
+          <p className="fixed text-black font-[Marker] text-[24pt]">Your favorite words</p>
           <WordBox words = {user.words as [string, number][]}></WordBox>
         </div>
       )
       animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
       break;
-    case 7:
+    case 19:
+      content = <div className = {textAnimation}>
+        Having tripped and broken your neck, an ambulance takes you to the hospital, where they give you an itemized receipt that your clumsiness accrued.
+        </div>
+      break;
+    case 20:
       content = (
         <Receipt messages={user.messages}></Receipt>
       )
       animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
       break;
-    case 8:
+    case 21:
+      content = <div className = {textAnimation}>
+        As you wheel yourself out of the hospital, you think yourself: <i>Man, 2025 will be a crazy year.</i> But then you suddenly feel the urge to write down your favorite Discord reactions!
+        </div>
+      break;
+    case 22:
       content = <Reaction reactions={user.reactions}></Reaction>
       animation = useAnimation("animate-pick-up", "animate-put-down", "animate-pick-up", "animate-put-down");
       break;

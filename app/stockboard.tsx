@@ -29,7 +29,9 @@ export default function StockBoard(props: {userId: string;}) {
 
     return (
         <div className="bg-black h-[70vh] w-[100vh]">
-            <p>Those are rookie numbers! </p>
+            <p className="font-[Fake-Receipt] text-white text-[18pt]">
+                {"Funny Carrot Network (ALLINQ)"}
+            </p>
             <Line 
                 data={{
                   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],

@@ -34,6 +34,16 @@
 }
 
 @font-face {
+  font-family: Typewriter;
+  src: url("/fonts/SpecialElite.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Marker, cursive;
+  src: url("/fonts/PermanentMarker.ttf") format('truetype');
+}
+
+@font-face {
   font-family: Libre-Bodoni;
   src: url("/fonts/Libre-Bodoni.ttf") format("truetype");
   font-weight: 0 900;
