@@ -1,9 +1,9 @@
-// app/page.tsx (server component)
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
 import AuthButton from "./AuthButton";
 import NotAuthorized from "./NotAuthorized";
 import Interactibles from "./interactibles";
+import data from "../public/data/output.json"
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
@@ -22,7 +22,7 @@ export default async function Home() {
 
   const userId = (session.user as any).id;
   console.log(userId);
-  const allowed = process.env.ALLOWED_IDS?.split(",").map(s => s.trim()) ?? [];
+  const allowed = Object.keys(data);
   if (!allowed.includes(userId)) {
     return (
       <div>
