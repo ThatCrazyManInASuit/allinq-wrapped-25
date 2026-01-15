@@ -32,6 +32,8 @@ export default async function Home() {
 
   return (
     <main className="h-full w-full">
+       <audio autoPlay loop className="hidden" src="/sounds/night-ambience.mp3" preload="auto">
+        </audio> 
       <Interactibles userId={userId}></Interactibles>
     </main>
   );

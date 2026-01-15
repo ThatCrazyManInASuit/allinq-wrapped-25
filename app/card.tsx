@@ -16,7 +16,6 @@ let sam = new SAM();
 
 export default function Card(props: {id: number, userId: string}) {
   let user = data[props.userId as keyof typeof data];
-
   type Direction = "forwards" | "backwards";
 
   const [displayID, setDisplayID] = useState(0);
@@ -59,16 +58,28 @@ export default function Card(props: {id: number, userId: string}) {
       content = <div className = {textAnimation}>The date is December 31st, 2024.</div>
       break;
     case 1:
-      content = <div className = {textAnimation}>You receive a call, from a mysterious voice, claiming they can tell the future.</div>
+      content = <div className = {textAnimation}>
+        <audio autoPlay className="hidden" src="/sounds/phone.mp3" preload="auto"></audio>
+        You receive a call, from a mysterious voice, claiming they can tell the future.
+        </div>
       break;
     case 2:
-      content = <div className = {textAnimation}>Your mind swirls at the idea of what the future could hold. Maybe you're going to be rich! Or maybe you'll have a car crash... </div>
+      content = <div className = {textAnimation}>
+        <audio autoPlay className="hidden" src="/sounds/open-car-door.mp3" preload="auto"></audio>
+        As you hop in your car, your mind swirls at the idea of what the future could hold. This knowledge could give you so much power... 
+        </div>
       break;
     case 3:
-      content = <div className = {textAnimation}>Hopping out of your car, you arrive at the address given to you: an abandoned warehouse.</div>
+      content = <div className = {textAnimation}>
+        <audio autoPlay className="hidden" src="/sounds/close-car-door.mp3" preload="auto"></audio>
+        Hopping out of your car, you arrive at the address given to you: an abandoned warehouse.
+        </div>
       break;
     case 4:
-      content = <div className = {textAnimation}>After breaking a few windows and slamming through some doors, you finally make it inside.</div>
+      content = <div className = {textAnimation}>
+        <audio autoPlay className="hidden" src="/sounds/glass-breaking.mp3" preload="auto"></audio>
+        After breaking a few windows and slamming through some doors, you finally make it inside.
+        </div>
       break;
     case 5:
       content = <div className = {textAnimation}>However, you are only met with a vast collection of boxes.</div>
@@ -79,24 +90,26 @@ export default function Card(props: {id: number, userId: string}) {
     case 7:
       content = (
         <div className = {"flex flex-col bg-[url('/cardboard.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] w-[80vh] text-center justify-center"}>
-          <p className=" font-[Marker] text-black text-[48pt]">{user.usernameDebug}</p>
-          <p className=" font-[Marker] text-black text-[24pt]">circa 2025</p>
+          <p className="font-[Acki-Preschool] font-bold text-black text-[8vh]">{user.usernameDebug}</p>
+          <p className="font-[Acki-Preschool] text-black text-[4vh] font-bold">circa 2025</p>
         </div>
       )
       animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
       break;
     case 8:
-      content = <div className = {textAnimation}><i>How strange...</i> you think to yourself. <i>Is this my Discord nickname in All Inquiries in 2025?</i></div>
+      content = <div className = {textAnimation}><i>How strange...</i> you think to yourself. <i>Is that my Discord nickname?</i></div>
       break;
     case 9:
       content = <div className = {textAnimation}>
-        You peer inside the box and find a random assortment of papers and doodads, reports and printers, balls and pits.
+        <audio autoPlay className="hidden" src="/sounds/box-open.mp3" preload="auto"></audio>
+        You open the box and find a random assortment of papers and doodads, reports and printers, balls and pits.
         </div>
       break;
     case 10:
       content = (
         <div className = "flex flex-col bg-[url(/fortune.png)] bg-cover h-9/10 w-[45vh] text-center justify-end pb-[25vh] rotate-[-7deg]">
-          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[24pt] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>In 2025, you will post {user.totalMessages} messages...</p>
+          <audio autoPlay className="hidden" src="/sounds/card.mp3" preload="auto"></audio>
+          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[4vh] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>In 2025, you will post {user.totalMessages} messages...</p>
         </div>
       );
       animation = useAnimation("animate-pick-up", "", "", "animate-put-down");
@@ -104,14 +117,16 @@ export default function Card(props: {id: number, userId: string}) {
     case 11:
       content = (
         <div className = "flex flex-col bg-[url(/fortune.png)] bg-cover h-9/10 w-[45vh] text-center justify-end pb-[18vh] rotate-[-7deg]">
-          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[24pt] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>Of those your longest message will be {user.longestMessage} characters long...</p>
+          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[4vh] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>
+            Of those, your longest message will be {user.longestMessage} characters long...
+          </p>
         </div>
       );
       break;
     case 12:
       content = (
         <div className = "flex flex-col bg-[url(/fortune.png)] bg-cover h-9/10 w-[45vh] text-center justify-end pb-[12vh] rotate-[-7deg]">
-          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[24pt] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>
+          <p className = {`text-black font-[Libre-Bodoni] font-thin text-[4vh] ${useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out")}`}>
             Throughout those messages, it will be an average of {user.averageWordsPerMessage} words per message!
           </p>
         </div>
@@ -126,7 +141,8 @@ export default function Card(props: {id: number, userId: string}) {
     case 14:
       content = (
         <div className = "flex flex-col font-[Monserrat] font-bold text-center h-[90vh] w-[63vh] bg-white rotate-[7deg] p-5">
-          <p className = "text-black text-[24pt]">2025 ANNUAL REPORT</p>
+          <audio autoPlay className="hidden" src="/sounds/paper.mp3" preload="auto"></audio>
+          <p className = "text-black text-[4vh]">2025 ANNUAL REPORT</p>
             <button
               onClick={() => setGraphView({ view: "month" })}
               className={"text-black flex pl-5"}
@@ -162,46 +178,90 @@ export default function Card(props: {id: number, userId: string}) {
       break;
     case 15:
       content = <div className = {textAnimation}>
-        Immediately upon the sight of a report, which are for nerds, you get really bored and start to leave, when all of a sudden, a TV falls on you.
+        Thouroughly freaked out, you step away from the mysterious box. When before you know it...
         </div>
       break;
     case 16:
+      content = <div className = {textAnimation}>
+        <audio autoPlay className="hidden" src="/sounds/crash.mp3" preload="auto"></audio>
+        ...some kind of giant screen falls on you.
+        </div>
+      break;
+    case 17:
       content = <StockBoard userId={props.userId}></StockBoard>
       animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
       break;
-    case 17:
+    case 18:
       content = <div className = {textAnimation}>
         Scared that another TV will fall on you, you run for the exit, only to trip over another box.
         </div>
       break;
-    case 18:
+    case 19:
       content = (
-        <div className = {"bg-[url('/cardboard.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] w-[80vh] text-center"}>
-          <p className="fixed text-black font-[Marker] text-[24pt]">Your favorite words</p>
+        <div className = {"bg-[url('/cardboard.jpg')] bg-cover bg-center bg-no-repeat h-[80vh] w-[80vh]"}>
+          <audio autoPlay className="hidden" src="/sounds/ball-pit.mp3" preload="auto"></audio>
+          <div className="fixed text-black font-[Acki-Preschool] font-extrabold p-5">
+            <p className="text-[6vh]">Your favorite words</p>
+            <p className="text-[2vh]">{"(Yes, you can throw them around)"}</p>
+          </div>
           <WordBox words = {user.words as [string, number][]}></WordBox>
         </div>
       )
       animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
       break;
-    case 19:
+    case 20:
       content = <div className = {textAnimation}>
+        <audio autoPlay className="hidden" src="/sounds/neck-bye-bye.mp3" preload="auto"></audio>
         Having tripped and broken your neck, an ambulance takes you to the hospital, where they give you an itemized receipt that your clumsiness accrued.
         </div>
       break;
-    case 20:
+    case 21:
       content = (
         <Receipt messages={user.messages}></Receipt>
       )
       animation = useAnimation("animate-box-up", "animate-box-down", "animate-box-up", "animate-box-down");
       break;
-    case 21:
+    case 22:
       content = <div className = {textAnimation}>
         As you wheel yourself out of the hospital, you think yourself: <i>Man, 2025 will be a crazy year.</i> But then you suddenly feel the urge to write down your favorite Discord reactions!
         </div>
       break;
-    case 22:
+    case 23:
       content = <Reaction reactions={user.reactions}></Reaction>
       animation = useAnimation("animate-pick-up", "animate-put-down", "animate-pick-up", "animate-put-down");
+      break;
+    case 24:
+      content = <div className = {textAnimation + " text-center"}>
+        <p>Thank you for viewing the All Inquiries Wrapped 2025!</p>
+        <p>While you're here, take a look at the other All Inquirite projects made or updated in 2025!</p>
+        <div className="mt-5">
+          <div className="flex gap-5 justify-center m-5">
+            <a href="https://funnycarrotnetwork.fandom.com/wiki/All_Inqueries_Wiki" target="_blank" className="hover-underline-animation-white"> 
+              <img src="funnycarrotwiki.png" alt="https://funnycarrotnetwork.fandom.com/wiki/All_Inqueries_Wiki" title="All Inqueries Fandom Wiki" className="h-[7vh]"/> 
+            </a>
+            <a href="https://allinquiries.boards.net/" target="_blank" className="hover-underline-animation-white"> 
+              <img src="allinqbutton2.gif" alt="https://allinquiries.boards.net/" title="Proud user of All Inquiries forum 2.0!!" className="h-[7vh]"/> 
+            </a>
+          </div>
+          <div className="flex gap-5 justify-center m-5">
+            <a href="https://digifox.space/" target="_blank" className="hover-underline-animation-white"> 
+              <img src="digi88by31.png" alt="digifox.space" title="digifox.space" className="h-[7vh]"/> 
+            </a>
+            <a href="https://starlightreactor.neocities.org/" target="_blank" className="hover-underline-animation-white"> 
+              <img src="starlightbutton.png" alt="starlightreactor.neocities.org" title="starlightreactor.neocities.org" className="h-[7vh]"/> 
+            </a>
+            <a href="https://linkstew.neocities.org/" target="_blank" className="hover-underline-animation-white"> 
+              <img src="linkstewbutton.gif" alt="https://linkstew.neocities.org/" title="linkstew.neocities.org" className="h-[7vh]"/> 
+            </a>
+          </div>
+          <a href="https://stantoncomet.github.io/" target="_blank" className="hover-underline-animation-white"> 
+            <img src="a_cat_house_logo.png" alt="https://stantoncomet.github.io/" title="https://stantoncomet.github.io/" className="h-[7vh]"/> 
+          </a>
+        </div>
+        <a className="hover-underline-animation-white">
+          <p>Are you ready for 2026?</p>
+        </a>
+      </div>
       break;
     default:
       content = <div>ERR CARD NOT FOUND!</div>

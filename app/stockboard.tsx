@@ -29,9 +29,15 @@ export default function StockBoard(props: {userId: string;}) {
 
     return (
         <div className="bg-black h-[70vh] w-[100vh]">
-            <p className="font-[Fake-Receipt] text-white text-[18pt]">
-                {"Funny Carrot Network (ALLINQ)"}
-            </p>
+            <div className="flex font-[Fake-Receipt] text-[3vh] gap-[2vh]">
+                <p className="text-white">
+                    {"Funny Carrot Network (ALLINQ) -"}
+                </p>
+                <p className="text-lime-500">
+                    {` +${data[props.userId as keyof typeof data].percentile} ^`}
+                </p>
+            </div>
+            
             <Line 
                 data={{
                   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],

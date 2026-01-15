@@ -23,6 +23,7 @@ export default function Receipt(props: {messages: any}) {
                     audioRef.current?.play();
                 }}><p className="hover-underline-animation">PRINT MESSAGES</p></button>
             </div>
+            <audio autoPlay className="hidden" src="/sounds/paper.mp3" preload="auto"></audio>
             <div>
                 {messageSet.map((message, i) => {
                     return (

@@ -1,6 +1,7 @@
 export default function Reaction(props: {reactions: any}) {
     return (
         <div className="flex flex-col bg-[url(/notebook-paper.png)] bg-center bg-contain h-[64vh] w-[115vh] text-[5vh] items-center justify-center text-black font-[Acki-Preschool] rotate-[2deg]">
+            <audio autoPlay className="hidden" src="/sounds/paper.mp3" preload="auto"></audio>
             <b>You gave {props.reactions.given} reactions this year</b>
             <b>and received {props.reactions.received}!</b>
             <div className="text-center text-[2vh]">

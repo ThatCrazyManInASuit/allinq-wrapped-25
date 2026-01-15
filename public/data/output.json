@@ -4,6 +4,7 @@
     "totalMessages": 1940,
     "longestMessage": 774,
     "streak": 26,
+    "percentile": "65.85",
     "reactions": {
       "given": 417,
       "received": 462,
@@ -2907,6 +2908,7 @@
     "totalMessages": 10397,
     "longestMessage": 1315,
     "streak": 166,
+    "percentile": "95.12",
     "reactions": {
       "given": 2814,
       "received": 727,
@@ -14266,6 +14268,7 @@
     "totalMessages": 191,
     "longestMessage": 212,
     "streak": 5,
+    "percentile": "46.34",
     "reactions": {
       "given": 17,
       "received": 102,
@@ -15358,6 +15361,7 @@
     "totalMessages": 12805,
     "longestMessage": 1999,
     "streak": 184,
+    "percentile": "97.56",
     "reactions": {
       "given": 455,
       "received": 2684,
@@ -29180,6 +29184,7 @@
     "totalMessages": 2219,
     "longestMessage": 506,
     "streak": 69,
+    "percentile": "70.73",
     "reactions": {
       "given": 278,
       "received": 538,
@@ -32381,6 +32386,7 @@
     "totalMessages": 3220,
     "longestMessage": 910,
     "streak": 163,
+    "percentile": "82.93",
     "reactions": {
       "given": 654,
       "received": 1181,
@@ -36595,6 +36601,7 @@
     "totalMessages": 367,
     "longestMessage": 109,
     "streak": 8,
+    "percentile": "53.66",
     "reactions": {
       "given": 135,
       "received": 96,
@@ -37900,6 +37907,7 @@
     "totalMessages": 2402,
     "longestMessage": 585,
     "streak": 46,
+    "percentile": "75.61",
     "reactions": {
       "given": 374,
       "received": 1502,
@@ -41262,6 +41270,7 @@
     "totalMessages": 3708,
     "longestMessage": 770,
     "streak": 91,
+    "percentile": "85.37",
     "reactions": {
       "given": 472,
       "received": 765,
@@ -45923,6 +45932,7 @@
     "totalMessages": 344,
     "longestMessage": 388,
     "streak": 14,
+    "percentile": "51.22",
     "reactions": {
       "given": 64,
       "received": 125,
@@ -47191,6 +47201,7 @@
     "totalMessages": 1362,
     "longestMessage": 594,
     "streak": 30,
+    "percentile": "60.98",
     "reactions": {
       "given": 95,
       "received": 424,
@@ -49502,6 +49513,7 @@
     "totalMessages": 7942,
     "longestMessage": 1275,
     "streak": 141,
+    "percentile": "92.68",
     "reactions": {
       "given": 2369,
       "received": 1751,
@@ -58470,6 +58482,7 @@
     "totalMessages": 6869,
     "longestMessage": 1316,
     "streak": 180,
+    "percentile": "90.24",
     "reactions": {
       "given": 1915,
       "received": 702,
@@ -66333,6 +66346,7 @@
     "totalMessages": 1901,
     "longestMessage": 454,
     "streak": 38,
+    "percentile": "63.41",
     "reactions": {
       "given": 671,
       "received": 428,
@@ -69172,6 +69186,7 @@
     "totalMessages": 2249,
     "longestMessage": 659,
     "streak": 114,
+    "percentile": "73.17",
     "reactions": {
       "given": 432,
       "received": 975,
@@ -72377,6 +72392,7 @@
     "totalMessages": 3916,
     "longestMessage": 723,
     "streak": 55,
+    "percentile": "87.80",
     "reactions": {
       "given": 544,
       "received": 644,
@@ -77234,6 +77250,7 @@
     "totalMessages": 4,
     "longestMessage": 49,
     "streak": 1,
+    "percentile": "24.39",
     "reactions": {
       "given": 8,
       "received": 7,
@@ -77793,6 +77810,7 @@
     "totalMessages": 3126,
     "longestMessage": 1229,
     "streak": 142,
+    "percentile": "80.49",
     "reactions": {
       "given": 2723,
       "received": 870,
@@ -81881,6 +81899,7 @@
     "totalMessages": 2775,
     "longestMessage": 799,
     "streak": 82,
+    "percentile": "78.05",
     "reactions": {
       "given": 329,
       "received": 377,
@@ -85591,6 +85610,7 @@
     "totalMessages": 964,
     "longestMessage": 1588,
     "streak": 12,
+    "percentile": "58.54",
     "reactions": {
       "given": 417,
       "received": 243,
@@ -87468,6 +87488,7 @@
     "totalMessages": 2087,
     "longestMessage": 221,
     "streak": 59,
+    "percentile": "68.29",
     "reactions": {
       "given": 216,
       "received": 518,
@@ -90480,6 +90501,7 @@
     "totalMessages": 250,
     "longestMessage": 247,
     "streak": 8,
+    "percentile": "48.78",
     "reactions": {
       "given": 95,
       "received": 156,
@@ -91652,6 +91674,7 @@
     "totalMessages": 103,
     "longestMessage": 353,
     "streak": 3,
+    "percentile": "36.59",
     "reactions": {
       "given": 19,
       "received": 11,
@@ -92684,6 +92707,7 @@
     "totalMessages": 15,
     "longestMessage": 87,
     "streak": 1,
+    "percentile": "29.27",
     "reactions": {
       "given": 16,
       "received": 3,
@@ -93590,6 +93614,7 @@
     "totalMessages": 511,
     "longestMessage": 381,
     "streak": 20,
+    "percentile": "56.10",
     "reactions": {
       "given": 27,
       "received": 232,
@@ -95018,6 +95043,7 @@
     "totalMessages": 61,
     "longestMessage": 215,
     "streak": 4,
+    "percentile": "31.71",
     "reactions": {
       "given": 37,
       "received": 15,
@@ -95974,6 +96000,7 @@
     "totalMessages": 79,
     "longestMessage": 148,
     "streak": 2,
+    "percentile": "34.15",
     "reactions": {
       "given": 7,
       "received": 22,
@@ -96947,6 +96974,7 @@
     "totalMessages": 119,
     "longestMessage": 181,
     "streak": 6,
+    "percentile": "41.46",
     "reactions": {
       "given": 6,
       "received": 47,
@@ -97966,6 +97994,7 @@
     "totalMessages": 107,
     "longestMessage": 171,
     "streak": 4,
+    "percentile": "39.02",
     "reactions": {
       "given": 15,
       "received": 12,
@@ -98985,6 +99014,7 @@
     "totalMessages": 3,
     "longestMessage": 7,
     "streak": 1,
+    "percentile": "21.95",
     "reactions": {
       "given": 1,
       "received": 0,
@@ -99478,6 +99508,7 @@
     "totalMessages": 190,
     "longestMessage": 170,
     "streak": 4,
+    "percentile": "43.90",
     "reactions": {
       "given": 14,
       "received": 36,
@@ -100557,6 +100588,7 @@
     "totalMessages": 4,
     "longestMessage": 50,
     "streak": 2,
+    "percentile": "24.39",
     "reactions": {
       "given": 0,
       "received": 7,
@@ -101128,6 +101160,7 @@
     "totalMessages": 1,
     "longestMessage": 7,
     "streak": 1,
+    "percentile": "2.44",
     "reactions": {
       "given": 0,
       "received": 0,
@@ -101606,6 +101639,7 @@
     "totalMessages": 1,
     "longestMessage": 18,
     "streak": 1,
+    "percentile": "2.44",
     "reactions": {
       "given": 0,
       "received": 0,
@@ -102092,6 +102126,7 @@
     "totalMessages": 2,
     "longestMessage": 30,
     "streak": 1,
+    "percentile": "17.07",
     "reactions": {
       "given": 0,
       "received": 1,
@@ -102599,6 +102634,7 @@
     "totalMessages": 1,
     "longestMessage": 30,
     "streak": 1,
+    "percentile": "2.44",
     "reactions": {
       "given": 0,
       "received": 0,
@@ -103089,6 +103125,7 @@
     "totalMessages": 0,
     "longestMessage": 0,
     "streak": 1,
+    "percentile": "0.00",
     "reactions": {
       "given": 0,
       "received": 0,
@@ -103560,6 +103597,7 @@
     "totalMessages": 1,
     "longestMessage": 18,
     "streak": 1,
+    "percentile": "2.44",
     "reactions": {
       "given": 0,
       "received": 0,
@@ -104046,6 +104084,7 @@
     "totalMessages": 1,
     "longestMessage": 18,
     "streak": 1,
+    "percentile": "2.44",
     "reactions": {
       "given": 0,
       "received": 0,
@@ -104532,6 +104571,7 @@
     "totalMessages": 2,
     "longestMessage": 18,
     "streak": 1,
+    "percentile": "17.07",
     "reactions": {
       "given": 0,
       "received": 10,
@@ -105025,6 +105065,7 @@
     "totalMessages": 1,
     "longestMessage": 7,
     "streak": 1,
+    "percentile": "2.44",
     "reactions": {
       "given": 0,
       "received": 2,

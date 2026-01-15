@@ -13,9 +13,9 @@ export default function AuthButton() {
         );
     }
     return (
-        <div className="flex gap-2 items-center top-[2vh] absolute">
-        <button onClick={() => signOut()} className="px-2 py-1 bg-gray-200 rounded z-51">
-            Sign out
+        <div className="flex gap-2 items-center top-[2vh] left-[2vh] absolute">
+        <button onClick={() => signOut()} className="px-3 py-2 rounded bg-indigo-600 text-white font-[Libre-Bodoni]">
+            <p className="hover-underline-animation-white">Sign out</p>
         </button>
         </div>
     )
