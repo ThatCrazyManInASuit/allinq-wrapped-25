@@ -232,6 +232,7 @@ export default function Card(props: {id: number, userId: string}) {
       break;
     case 24:
       content = <div className = {textAnimation}>
+        <audio autoPlay className="hidden" src="/sounds/crumple.mp3" preload="auto"></audio>
         Crumbling the paper in your hand, you think to yourself: <i>Maybe it wasn't worth knowing. Maybe it wasn't worth getting hurt over.</i>
         </div>
       break;
@@ -273,7 +274,7 @@ export default function Card(props: {id: number, userId: string}) {
             <img src="a_cat_house_logo.png" alt="https://stantoncomet.github.io/" title="https://stantoncomet.github.io/" className="h-[7vh]"/> 
           </a>
         </div>
-        <a className="hover-underline-animation-white">
+        <a className="hover-underline-animation-white" target="_blank" href="https://thatcrazymaninasuit.github.io/wrapped/i_could_have_sworn_there_was_something_here.html">
           <p>Are you ready for 2026?</p>
         </a>
       </div>
