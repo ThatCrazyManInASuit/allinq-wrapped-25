@@ -52,7 +52,7 @@ export default function Card(props: {id: number, userId: string}) {
 
 
   let content, animation = "";
-  const textAnimation = useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out") + " font-[Typewriter]";
+  const textAnimation = useAnimation("animate-fade-in", "animate-fade-out", "animate-fade-in", "animate-fade-out") + " font-[Typewriter] text-center text-[2vh]";
   switch (displayID) {
     case 0:
       content = <div className = {textAnimation}>The date is December 31st, 2024.</div>
@@ -212,7 +212,7 @@ export default function Card(props: {id: number, userId: string}) {
     case 20:
       content = <div className = {textAnimation}>
         <audio autoPlay className="hidden" src="/sounds/neck-bye-bye.mp3" preload="auto"></audio>
-        Having tripped and broken your neck, an ambulance takes you to the hospital, where they give you an itemized receipt that your clumsiness accrued.
+        Having tripped and sprained your ankles, an ambulance takes you to the hospital, where they give you an itemized receipt that your clumsiness accrued.
         </div>
       break;
     case 21:
@@ -223,7 +223,7 @@ export default function Card(props: {id: number, userId: string}) {
       break;
     case 22:
       content = <div className = {textAnimation}>
-        As you wheel yourself out of the hospital, you think yourself: <i>Man, 2025 will be a crazy year.</i> But then you suddenly feel the urge to write down your favorite Discord reactions!
+        Crutches in hand, you see one last strange occurrence fly through the wind and land in front of you. 
         </div>
       break;
     case 23:
@@ -231,7 +231,22 @@ export default function Card(props: {id: number, userId: string}) {
       animation = useAnimation("animate-pick-up", "animate-put-down", "animate-pick-up", "animate-put-down");
       break;
     case 24:
-      content = <div className = {textAnimation + " text-center"}>
+      content = <div className = {textAnimation}>
+        Crumbling the paper in your hand, you think to yourself: <i>Maybe it wasn't worth knowing. Maybe it wasn't worth getting hurt over.</i>
+        </div>
+      break;
+    case 25:
+      content = <div className = {textAnimation}>
+        <i>Maybe, just maybe, everything will be just fine.</i>
+        </div>
+      break;
+    case 26:
+      content = <div className = {textAnimation}>
+        Now home, you start to relax. It has been an exhausting day. You boot up your computer, open Discord, and look forward to the times you will have with your friends.
+        </div>
+      break;
+    case 27:
+      content = <div className = {textAnimation}>
         <p>Thank you for viewing the All Inquiries Wrapped 2025!</p>
         <p>While you're here, take a look at the other All Inquirite projects made or updated in 2025!</p>
         <div className="mt-5">
